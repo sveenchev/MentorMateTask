@@ -8,13 +8,13 @@ namespace _program
         {			
             int n = int.Parse(Console.ReadLine());
             int outsideDash = n;
-			int topStars = n;
-			int middleDash = n;
+	    int topStars = n;
+	    int middleDash = n;
 			
-			//First for loop for drawing the top side of the image. For example if n = 5 this will be the result:
-			//-----*****-----*****----------*****-----*****-----
-            //----*******---*******--------*******---*******----
-            //---*********-*********------*********-*********---
+	//First for loop for drawing the top side of the image. For example if n = 5 this will be the result:
+	//-----*****-----*****----------*****-----*****-----
+        //----*******---*******--------*******---*******----
+        //---*********-*********------*********-*********---
             for (int i = 0; i <= n/2; i++)
             {
 				string outDash = new string('-', outsideDash);
@@ -36,10 +36,10 @@ namespace _program
 			int downMiddleDash = 1;
 			topStars -= 2;
 			
-			//Second for loop for drawing the bottom side of the image. For example if n = 5 this will be the result:
-			//--*****-*********-*****----*****-*********-*****--
-            //-*****---*******---*****--*****---*******---*****-
-            //*****-----*****-----**********-----*****-----*****
+	//Second for loop for drawing the bottom side of the image. For example if n = 5 this will be the result:
+	//--*****-*********-*****----*****-*********-*****--
+        //-*****---*******---*****--*****---*******---*****-
+        //*****-----*****-----**********-----*****-----*****
 			for (int i = 0; i <= n/2; i++)
             {
 				string downOutDash = new String('-', outsideDash);
